@@ -27,5 +27,33 @@ public class PainterManager extends AppCompatActivity {
                 // Code to execute after clicking button;
             }
         });
+
+        btnReadPainter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Code to execute after clicking button;
+            }
+        });
+
+        btnUpdatePainter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Code to execute after clicking button;
+            }
+        });
+
+        btnDeletePainter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Code to execute after clicking button;
+            }
+        });
+
+        btnGetAllPainters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Code to execute after clicking button;
+            }
+        });
     }
 }

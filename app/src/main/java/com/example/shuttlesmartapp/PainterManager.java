@@ -31,6 +31,7 @@ public class PainterManager extends AppCompatActivity {
             }
         });
 
+
         btnGetAllPainters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,5 +43,7 @@ public class PainterManager extends AppCompatActivity {
     public void openReadAllPainters() {
         Intent intent = new Intent(this, ReadAllPainters.class);
         startActivity(intent);
+
+
     }
 }

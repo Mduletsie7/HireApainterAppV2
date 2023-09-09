@@ -1,2 +1,2 @@
-# ShuttleSmartApp
-Project 2 Group 22 Shuttle Smart App Repo
+# HireApainterAppV2
+ADP3 Group 15 Hire A Painter App

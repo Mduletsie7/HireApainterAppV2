@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //
     public void openProjectManager(){
         Intent intent = new Intent(this, ProjectManager.class);
         startActivity(intent);

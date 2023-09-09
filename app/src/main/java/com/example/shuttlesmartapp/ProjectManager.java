@@ -12,7 +12,7 @@ public class ProjectManager extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_manager);
 
-        // Declare our buttons and assign them to the layout by ID
+        // Declare buttons and assign them to the layout by ID
 
         Button btnCreateProject = findViewById(R.id.btnCreateProject);
         Button btnReadProject = findViewById(R.id.btnReadProject);

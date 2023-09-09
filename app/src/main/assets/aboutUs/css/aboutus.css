@@ -1,0 +1,205 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+  }
+  
+  html {
+    box-sizing: border-box;
+    background-color: rgb (255, 255, 255)  ;
+
+
+  }
+  
+  .about-section {
+    padding: 20px;
+    text-align: center;
+    background-image: url(https://th.bing.com/th/id/R.95a896fb2a7cb8d85a77f8c90104d6cc?rik=hf%2btTustrt%2b2GA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f53%2f72%2fRaJ6Ap.jpg&ehk=vyBX6qxWP6lmsADmzUTQVEyLcZna55a8hzKedvGLxUU%3d&risl=&pid=ImgRaw&r=0);
+    
+  }
+
+  * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .p{
+    font-family: cursive;
+    font-size: 30px;
+    color:goldenrod;
+  }
+  .p2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .h4{
+    font-style: normal italic;
+  }
+  
+  .container{
+
+    height:500px;
+    width: auto;
+    display: flex;
+    box-shadow: 10px 10px 18px 18px #aaaaaa, 7px 8px 4px #ffffff;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align:center;
+    background-color: rgb (255, 255, 255)  ;
+
+  }
+
+  
+  .about_details span{
+
+    color:red;
+    text-align: center;
+    font-family:cursive;
+    font-style: italic bold;
+    justify-content: flex-start;
+    font-size: 50px;
+
+  }
+  .about_details h2{
+    font-family:cursive;
+    margin-bottom: 150px;
+    letter-spacing: 3px;
+    font-style: bold;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-align:center;
+  }
+
+ .about_details p{
+
+    color: black;
+    font-style:oblique bold;
+    justify-content:flex-start;
+    font-size:30px;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 50px;
+    margin-left:50px;
+    padding:9px 20px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: #373737;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+   }
+  
+  .btn:hover{
+
+    background-color: red;
+    }
+
+
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 10px 0px;
+  }
+  
+  .card {
+    border: 2px solid rgba(0,0,0,.125);
+    margin: 10px;
+     border-radius: 0.25rem;
+     text-align:center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif ;
+     height: 550px;
+     width: 360px; 
+     background-color: #f1f1f1;
+     flex-direction: column;
+     padding: 5px;
+     box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;
+     
+     
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  img {
+    box-sizing: content-box;
+    border-radius: 50%;
+    margin-top: auto;
+  }
+ 
+
+  .h{
+font-size: 700%;
+font-style:bold ;
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+text-align: center;
+margin-top: 100%;
+font-weight: 400%;
+color:grey;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: red;
+  color: white;
+}
+.fa-github {
+  background:black;
+  color: white;
+}
+
+  

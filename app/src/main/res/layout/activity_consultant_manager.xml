@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#2790b0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="What would you like to do?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnCreateConsultant"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dp"
+            android:background="#000000"
+            android:text="Create Consultant"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="50dp"
+            app:icon="@drawable/icons8_about_24"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnReadConsultant"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="#000000"
+            android:text="Read Consultant"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
+            app:icon="@drawable/icons8_about_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnUpdateConsultant"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="#000000"
+            android:text="Update Consultant"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
+            app:icon="@drawable/icons8_about_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnDeleteConsultant"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="#000000"
+            android:text="Delete Consultant"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
+            app:icon="@drawable/icons8_about_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnGetAllConsultants"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="#000000"
+            android:text="Get all Consultants"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
+            app:icon="@drawable/icons8_about_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

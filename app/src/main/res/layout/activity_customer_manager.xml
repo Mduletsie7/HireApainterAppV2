@@ -26,12 +26,11 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:text="What would you like to do?"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="60sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
 

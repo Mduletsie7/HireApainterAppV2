@@ -19,14 +19,21 @@
             android:name=".EmployeeManager"
             android:exported="false" />
         <activity
+            android:name=".CustomerManager"
+            android:exported="false" />
+        <activity
             android:name=".ConsultantManager"
             android:exported="false" />
         <activity
             android:name=".PainterManager"
             android:exported="false" />
         <activity
+            android:name=".ProjectManager"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

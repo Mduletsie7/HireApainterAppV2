@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) { openEmployeeManager(); }
         });
 
-//        btnProjects.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) { openProjectManager(); }
-//        });
+        btnProjects.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openProjectManager(); }
+        });
 
     }
 
@@ -47,10 +47,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    Create Project Manager class, link it to project manager layout
-
-//    public void openProjectManager() {
-//        Intent intent = new Intent(this, ProjectManager.class);
-//        startActivity(intent);
-//    }
+    public void openProjectManager(){
+        Intent intent = new Intent(this, ProjectManager.class);
+        startActivity(intent);
+    }
 }

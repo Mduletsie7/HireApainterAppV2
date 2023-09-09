@@ -2,9 +2,12 @@ package com.example.shuttlesmartapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.shuttlesmartapp.API.Painter.ReadAllPainters;
 
 public class PainterManager extends AppCompatActivity {
 
@@ -27,5 +30,17 @@ public class PainterManager extends AppCompatActivity {
                 // Code to execute after clicking button;
             }
         });
+
+        btnGetAllPainters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReadAllPainters();
+            }
+        });
+    }
+
+    public void openReadAllPainters() {
+        Intent intent = new Intent(this, ReadAllPainters.class);
+        startActivity(intent);
     }
 }

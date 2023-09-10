@@ -34,6 +34,9 @@
             android:name=".API.Painter.ReadAllPainters"
             android:exported="false" />
         <activity
+            android:name=".API.Painter.ReadAllQuotes"
+            android:exported="false" />
+        <activity
             android:name=".API.Painter.ReadAllProjects"
             android:exported="false" />
         <activity

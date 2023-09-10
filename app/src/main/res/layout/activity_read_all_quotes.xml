@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quoteslist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2790b0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnReadPainters"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="Read Painters"-->
+    <!--        tools:layout_editor_absoluteX="129dp"-->
+    <!--        tools:layout_editor_absoluteY="103dp" />-->
+
+    <TextView
+        android:id="@+id/quotesList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Awaiting Response"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <!--progress bar for loading -->
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

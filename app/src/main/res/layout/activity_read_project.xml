@@ -17,7 +17,7 @@
         android:id="@+id/paintersList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Project View"
+        android:text="Project Views"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="184dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

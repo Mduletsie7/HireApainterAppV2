@@ -43,7 +43,5 @@ public class PainterManager extends AppCompatActivity {
     public void openReadAllPainters() {
         Intent intent = new Intent(this, ReadAllPainters.class);
         startActivity(intent);
-
-
     }
 }

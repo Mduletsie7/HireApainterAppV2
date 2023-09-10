@@ -31,6 +31,12 @@
             android:name=".ProjectManager"
             android:exported="true" />
         <activity
+        android:name=".API.Painter.ReadAllPainters"
+        android:exported="true" />
+        <activity
+            android:name=".API.Painter.ReadAllProjects"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
 

@@ -25,7 +25,7 @@ public class ReadAllPainters extends AppCompatActivity {
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.8.100:8080/painter/getAll";
+        String url = "http://192.168.0.176:8080/painter/getAll/"; //8.100
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,

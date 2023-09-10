@@ -1,8 +1,6 @@
 package com.example.shuttlesmartapp.API.Painter;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,21 +13,19 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.shuttlesmartapp.R;
 
-public class ReadAllQuotes extends AppCompatActivity {
+public class ReadAllProjects extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_all_quotes);
+        setContentView(R.layout.activity_read_all_projects);
 
-        final TextView textView = (TextView) findViewById(R.id.quotesList);
-        final ProgressBar loadingPB = (ProgressBar) findViewById(R.id.idLoadingPB);
+        final TextView textView = (TextView) findViewById(R.id.projectsList);
+// ...
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-
-        String url = "http://192.168.8.100:8080/quote/getAll";
-        loadingPB.setVisibility(View.VISIBLE);
+        String url = "http://192.168.0.107:8080/project/getAll/"; //8.100
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -38,7 +34,6 @@ public class ReadAllQuotes extends AppCompatActivity {
                     public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
                         textView.setText("Response is: " + response.substring(0));
-                        loadingPB.setVisibility(View.GONE);
                     }
                 }, new Response.ErrorListener() {
             @Override

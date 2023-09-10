@@ -30,9 +30,11 @@
         <activity
             android:name=".ProjectManager"
             android:exported="true" />
-
         <activity
             android:name=".API.Painter.ReadAllPainters"
+            android:exported="false" />
+        <activity
+            android:name=".API.Painter.ReadAllProjects"
             android:exported="false" />
         <activity
             android:name=".API.Painter.CreatePainter"
@@ -43,13 +45,10 @@
         <activity
             android:name=".API.Painter.DeletePainter"
             android:exported="false" />
-      
-        <activity
-        android:name=".API.Painter.ReadAllPainters"
-        android:exported="true" />
-        <activity
-            android:name=".API.Painter.ReadAllProjects"
-            android:exported="true" />
+
+<!--        <activity-->
+<!--            android:name=".API.Painter.ReadAllProjects"-->
+<!--            android:exported="true" />-->
         <activity
             android:name=".MainActivity"
             android:exported="true" >

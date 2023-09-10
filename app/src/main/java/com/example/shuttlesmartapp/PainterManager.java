@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.shuttlesmartapp.API.Painter.CreatePainter;
+import com.example.shuttlesmartapp.API.Painter.DeletePainter;
 import com.example.shuttlesmartapp.API.Painter.ReadAllPainters;
+import com.example.shuttlesmartapp.API.Painter.ReadPainter;
 
 public class PainterManager extends AppCompatActivity {
 
@@ -28,9 +31,21 @@ public class PainterManager extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Code to execute after clicking button;
+                openCreatePainter();
             }
         });
 
+        btnReadPainter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openReadPainter();
+            }
+        });
+
+        btnDeletePainter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openDeletePainter(); }
+        });
 
         btnGetAllPainters.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,8 +55,24 @@ public class PainterManager extends AppCompatActivity {
         });
     }
 
+    public void openCreatePainter() {
+        Intent intent = new Intent(this, CreatePainter.class);
+        startActivity(intent);
+    }
+
+    public void openReadPainter() {
+        Intent intent = new Intent(this, ReadPainter.class);
+        startActivity(intent);
+    }
+
+    public void openDeletePainter() {
+        Intent intent = new Intent(this, DeletePainter.class);
+        startActivity(intent);
+    }
     public void openReadAllPainters() {
         Intent intent = new Intent(this, ReadAllPainters.class);
         startActivity(intent);
     }
+
+
 }

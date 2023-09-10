@@ -2,30 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#2790b0"
     tools:context=".MainActivity">
 
-<!--    <Button-->
-<!--        android:id="@+id/btnReadPainters"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:text="Read Painters"-->
-<!--        tools:layout_editor_absoluteX="129dp"-->
-<!--        tools:layout_editor_absoluteY="103dp" />-->
+
 
 
     <EditText
         android:id="@+id/painterID"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:hint="Provide ID"
+        android:hint="Provide ID of Painter you'd like to delete"
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -34,13 +25,13 @@
 
 
         <Button
-            android:id="@+id/btnReadPainter"
+            android:id="@+id/btnDeletePainter"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="26dp"
             android:background="#000000"
-            android:text="Read Painter"
+            android:text="Delete Painter"
             android:textColor="@color/black"
             app:backgroundTint="#ffffff"
             app:elevation="60dp" />

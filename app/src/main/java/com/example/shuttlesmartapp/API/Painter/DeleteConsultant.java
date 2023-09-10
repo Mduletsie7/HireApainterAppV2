@@ -19,68 +19,62 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.shuttlesmartapp.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class ReadPainter extends AppCompatActivity {
+public class DeleteConsultant extends AppCompatActivity {
 
     // creating variables for our edittext,
     // button, textview and progressbar.
-    private EditText txtPainterID;
-    private Button btnReadPainter;
+    private EditText txtConsultantID;
+    private Button btnReadConsultant;
     private ProgressBar loadingPB;
     private TextView responseTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_painter);
+        setContentView(R.layout.activity_delete_consultant);
 
         // initializing our views
-        txtPainterID = (EditText) findViewById(R.id.painterID);
-        btnReadPainter = findViewById(R.id.btnReadPainter);
+        txtConsultantID = (EditText) findViewById(R.id.consultantID);
+        btnReadConsultant = findViewById(R.id.btnDeleteConsultant);
         responseTV = findViewById(R.id.idTVResponse);
         loadingPB = findViewById(R.id.idLoadingPB);
 
         // adding on click listener to our button.
-        btnReadPainter.setOnClickListener(new View.OnClickListener() {
+        btnReadConsultant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // validating if the text field is empty or not.
-                if (txtPainterID.getText().toString().isEmpty()) {
-                    Toast.makeText(ReadPainter.this, "Please fill in all the fields", Toast.LENGTH_SHORT).show();
+                if (txtConsultantID.getText().toString().isEmpty()) {
+                    Toast.makeText(DeleteConsultant.this, "Please fill in all the fields", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Log.d("TestGettext", txtPainterID.getText().toString());
+                Log.d("TestGettext", txtConsultantID.getText().toString());
                 // calling a method to post the data and passing our text fields.
-                String painterId = txtPainterID.getText().toString();
-                readDataUsingVolley(painterId);
+                String consultantId = txtConsultantID.getText().toString();
+                readDataUsingVolley(consultantId);
 
             }
         });
     }
 
-    private void readDataUsingVolley(String painterId) {
+    private void readDataUsingVolley(String consultantId) {
         // url to post our data
-        String url = "http://192.168.0.107:8080/painter/read/" + painterId;
+        String url = "http://192.168.0.107:8080/consultant/delete/" + consultantId;
         loadingPB.setVisibility(View.VISIBLE);
 
         // creating a new variable for our request queue
-        RequestQueue queue = Volley.newRequestQueue(ReadPainter.this);
+        RequestQueue queue = Volley.newRequestQueue(DeleteConsultant.this);
 
         // on below line we are calling a string
         // request method to post the data to our API
         // in this we are calling a post method.
         // Request a string response from the provided URL.
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.DELETE, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         // Display the response string.
-                        responseTV.setText("Response is: " + response.substring(0));
+                        responseTV.setText("Successfully deleted: " + response.substring(0));
                         loadingPB.setVisibility(View.GONE);
                     }
                 }, new Response.ErrorListener() {

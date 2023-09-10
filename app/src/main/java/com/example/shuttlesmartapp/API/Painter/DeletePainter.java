@@ -65,7 +65,7 @@ public class DeletePainter extends AppCompatActivity {
 
     private void readDataUsingVolley(String painterId) {
         // url to post our data
-        String url = "http://192.168.8.100:8080/painter/delete/" + painterId;
+        String url = "http://192.168.0.107:8080/painter/delete/" + painterId;
         loadingPB.setVisibility(View.VISIBLE);
 
         // creating a new variable for our request queue

@@ -15,20 +15,20 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.shuttlesmartapp.R;
 
-public class ReadAllPainters extends AppCompatActivity {
+public class ReadAllConsultants extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_all_painters);
+        setContentView(R.layout.activity_read_all_consultants);
 
-        final TextView textView = (TextView) findViewById(R.id.paintersList);
+        final TextView textView = (TextView) findViewById(R.id.consultantsList);
         final ProgressBar loadingPB = (ProgressBar) findViewById(R.id.idLoadingPB);
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        String url = "http://192.168.0.107:8080/painter/getAll";
+        String url = "http://192.168.0.107:8080/consultant/getAll";
         loadingPB.setVisibility(View.VISIBLE);
 
         // Request a string response from the provided URL.

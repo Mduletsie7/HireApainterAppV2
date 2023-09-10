@@ -18,14 +18,14 @@ public class ReadAllProjects extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_project);
+        setContentView(R.layout.activity_read_all_projects);
 
-        final TextView textView = (TextView) findViewById(R.id.paintersList);
+        final TextView textView = (TextView) findViewById(R.id.projectsList);
 // ...
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.0.176:8080/project/getAll/"; //8.100
+        String url = "http://192.168.0.107:8080/project/getAll/"; //8.100
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,

@@ -90,7 +90,7 @@ public class CreatePainter extends AppCompatActivity {
 
     private void postDataUsingVolley(String painterId, String firstName, String lastName, String phoneNumber, String email, String streetAddress, String city, String province, String postalCode) {
         // url to post our data
-        String url = "http://192.168.8.100:8080/painter/create";
+        String url = "http://192.168.0.107:8080/painter/create";
         loadingPB.setVisibility(View.VISIBLE);
 
         // creating a new variable for our request queue

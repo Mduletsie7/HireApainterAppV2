@@ -18,9 +18,9 @@ public class ReadAllProjects extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_project);
+        setContentView(R.layout.activity_read_all_projects);
 
-        final TextView textView = (TextView) findViewById(R.id.paintersList);
+        final TextView textView = (TextView) findViewById(R.id.projectsList);
 // ...
 
         // Instantiate the RequestQueue.

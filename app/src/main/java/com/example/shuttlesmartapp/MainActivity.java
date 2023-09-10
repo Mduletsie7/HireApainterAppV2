@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+//    Create Project Manager class, link it to project manager layout
     public void openProjectManager(){
         Intent intent = new Intent(this, ProjectManager.class);
         startActivity(intent);

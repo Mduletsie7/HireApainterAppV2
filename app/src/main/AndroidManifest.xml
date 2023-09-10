@@ -29,11 +29,20 @@
             android:name=".PainterManager"
             android:exported="false" />
         <activity
+            android:name=".ProjectManager"
+            android:exported="true" />
+        <activity
             android:name=".API.Painter.ReadAllPainters"
             android:exported="false" />
         <activity
-            android:name=".ProjectManager"
-            android:exported="true" />
+            android:name=".API.Painter.CreatePainter"
+            android:exported="false" />
+        <activity
+            android:name=".API.Painter.ReadPainter"
+            android:exported="false" />
+        <activity
+            android:name=".API.Painter.DeletePainter"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >

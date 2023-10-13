@@ -12,7 +12,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.shuttlesmartapp.R;
-
+/*
 public class ReadAllProjects extends AppCompatActivity {
 
     @Override
@@ -47,3 +47,5 @@ public class ReadAllProjects extends AppCompatActivity {
 
     }
 }
+
+ */

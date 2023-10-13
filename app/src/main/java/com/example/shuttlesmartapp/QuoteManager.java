@@ -12,11 +12,11 @@ import com.example.shuttlesmartapp.API.Painter.CreateQuote;
 import com.example.shuttlesmartapp.API.Painter.DeletePainter;
 import com.example.shuttlesmartapp.API.Painter.DeleteQuote;
 import com.example.shuttlesmartapp.API.Painter.ReadAllPainters;
-import com.example.shuttlesmartapp.API.Painter.ReadAllQuotes;
 import com.example.shuttlesmartapp.API.Painter.ReadPainter;
 import com.example.shuttlesmartapp.API.Painter.ReadQuote;
-
+/*
 public class QuoteManager extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,7 @@ public class QuoteManager extends AppCompatActivity {
             public void onClick(View view) { openDeleteQuote(); }
         });
 
+
         btnGetAllQuotes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +59,8 @@ public class QuoteManager extends AppCompatActivity {
             }
         });
     }
+
+
 
     public void openCreateQuote() {
         Intent intent = new Intent(this, CreateQuote.class);
@@ -73,10 +76,19 @@ public class QuoteManager extends AppCompatActivity {
         Intent intent = new Intent(this, DeleteQuote.class);
         startActivity(intent);
     }
+
     public void openReadAllQuotes() {
         Intent intent = new Intent(this, ReadAllQuotes.class);
         startActivity(intent);
     }
 
 
+
+
+
+
+
 }
+
+
+ */
